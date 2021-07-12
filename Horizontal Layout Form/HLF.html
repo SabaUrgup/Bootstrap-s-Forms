@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Horizontal Layout Form</title>
+    <link href="../../../Bootstrapt/bootstrap.min.css" rel="stylesheet">    //import the Bootstrap which is a free front-end framework for faster and easier web development 
+    <script src="../../../Bootstrapt/bootstrap.bundle.min.js"></script>     //import the Bootstrap which is a free front-end framework for faster and easier web development
+    
+</head>
+
+<body>
+    <form style="margin-left: 25% ; margin-right: 25% ; margin-top: 5% ; margin-bottom: 10%">
+        <h1><strong>Horizontal Layout Form</strong></h1>
+        <hr>
+        <div class="p-3 mb-2 text-dark" style="padding: 20px" ;>
+            <p><strong> 1. Customer Info: </strong></p><br>
+            <div class="mb-3 row">
+                <label class="col-sm-3 col-form-label">Full Name:</label><br>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" placeholder="Enter Full Name"
+                        aria-describedby="inputGroupPrepend" required><br>
+                </div>
+                <div class="invalid-feedback">
+                    Please enter your full name.
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Email Address:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="staticEmail" placeholder="Enter Email"
+                        aria-describedby="inputGroupPrepend" required>
+                </div>
+                <div class="invalid-feedback">
+                    We'll never share your email with anyone else.
+                </div>
+            </div>
+            <br><br><br>
+            <p><strong> 2. Customer Account: </strong></p><br>
+            <div class="mb-3 row">
+                <label class="col-sm-3 col-form-label">Holder:</label><br>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" placeholder="Enter Full Name"
+                        aria-describedby="inputGroupPrepend" required><br>
+                </div>
+                <div class="invalid-feedback">
+                    Please enter your account holder.
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label class="col-sm-3 col-form-label">Contact:</label>
+                <div class="col-sm-9">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" class="form-control" placeholder="Phone Number" aria-label="Phone Number"
+                            aria-describedby="basic-addon1" required>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label class="col-3">Communication : </label>
+                <div class="col-9">
+
+                    <div class="form-check form-check-inline mb-3">
+                        <input class="form-check-input form-check-inline" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label form-check-inline" for="inlineCheckbox1">Email</label>
+                    </div>
+                    <div class="form-check form-check-inline mb-3">
+                        <input class="form-check-input form-check-inline" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label form-check-inline" for="inlineCheckbox1">SMS </label>
+                    </div>
+                    <div class="form-check form-check-inline mb-3">
+                        <input class="form-check-input form-check-inline" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label form-check-inline" for="inlineCheckbox1">Phone</label>
+                    </div>
+
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col text-center">
+                    <input type="submit" value="Submit" class="btn btn-primary ">
+                    <input type="reset" value="Cancel" class="btn btn-secondary">
+                </div>
+            </div>
+
+
+        </div>
+    </form>
+   
+
+</body>
+
+</html>
