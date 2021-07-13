@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Section Separator Form</title>
+    <link href="../../../Bootstrapt/bootstrap.min.css" rel="stylesheet">
+    <script src="../../../Bootstrapt/bootstrap.bundle.min.js"></script>
+    
+</head>
+
+<body>
+    <form style="margin-left: 25% ; margin-right: 25% ; margin-top: 5% ; margin-bottom: 10%">
+        <h1><strong>Section Separator</strong></h1>
+        <hr>
+        <div class="p-3 text-dark" style="padding: 20px">
+
+            <div class="mb-3" style="border-bottom: thin dashed grey">
+                <label class="form-label">Full Name:</label><br>
+                <input type="text" class="form-control text-primary" id="exampleFormControlInput1" placeholder="Enter Full Name"><br>
+                    <div class="invalid-feedback">
+                        Please enter your full name.
+                    </div>
+            </div>
+
+            <div class="mb-3" style="border-bottom: thin dashed grey">
+                <label for="staticEmail" class="form-label">Email Address:</label><br>
+                <input type="text" class="form-control text-primary" id="exampleFormControlInput1" placeholder="Enter Email"><br>
+                <div class="invalid-feedback">
+                    We'll never share your email with anyone else.
+                </div>
+            </div>
+            
+            <div class="mb-3" style="border-bottom: thin dashed grey">
+               <label for="basic-url" class="form-label" >Subscription: </label><br>
+                <div class="input-group mb-3">
+                    <br><span class="input-group-text" >$</span>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="99.9"><br>
+                </div>
+            </div>
+
+            <div class="mb-3"  style="border-bottom: thin dashed grey">
+                <label class="col-3 form-label">Communication : </label>
+                <div class="col-9">
+
+                    <div class="form-check ">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Email</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label " for="inlineCheckbox2">SMS </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input " type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Phone</label><br><br><br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col">
+                    <input type="submit" value="Submit" class="btn btn-primary ">
+                    <input type="reset" value="Cancel" class="btn btn-secondary">
+                </div>
+            </div>
+        </div>
+    </form>
+   
+
+</body>
+
+</html>
