@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Columns Form Layout</title>
+    <link href="../../../Bootstrapt/bootstrap.min.css" rel="stylesheet">
+    <script src="../../../Bootstrapt/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <form class="was-validated row g-3"
+        style="margin-left: 5% ; margin-right: 5% ; margin-top: 5% ; margin-bottom: 10%">
+        <h1><strong> Columns Form Layout </strong></h1>
+        <hr>
+        <div class="col-md-6">
+            <label class="form-label">Full Name:</label><br>
+            <input type="text" class="form-control text-primary" placeholder="Enter Full Name" required>
+            <div class="invalid-feedback">
+                Please enter your full name.<br>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Contact Number:</label>
+            <input type="number" class="form-control text-primary" placeholder="Enter Contact Number" required>
+            <div class="invalid-feedback">
+                Please enter your contact number.<br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label class="form-label">Address:</label>
+                <div class="input-group col mb-3">
+                    <input type="text" class="form-control" placeholder="Enter Your Address" required>
+                    <span class="input-group-text">@</span>
+                    <div class="invalid-feedback">
+                        Please enter your address.<br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Postcode:</label>
+                <div flex-nowrap class="input-group col mb-3">
+                    <input type="text" class="form-control" placeholder="Enter Your Postcode"
+                        aria-describedby="addon-wrapping" required>
+                    <span class="input-group-text" id="addon-wrapping">@</span>
+                    <div class="invalid-feedback">
+                        Please enter your postcode.<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <label class="form-label">User Group:</label>
+        <div class="mb-3 row was-validated">
+            <div class="col-9">
+
+                <!-- <div class="form-check form-check-inline mb-3">
+                    <input class="form-check-input form-check-inline" name="User" type="radio" id="inlineRadio1"
+                        value="option1" required>
+                    <label class="form-check-label form-check-inline" for="inlineRadio1">Sales Person</label>
+                    <div class="invalid-feedback">Please select user group.</div>
+                </div>
+                
+                <div class="form-check form-check-inline mb-3">
+                    <input class="form-check-input form-check-inline" name="User" type="radio" id="inlineRadio2"
+                        value="option1" required>
+                    <label class="form-check-label form-check-inline" for="inlineRadio2">Customer </label><br>
+                </div> -->
+                <div class="row">
+                    <div class="col-3">
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+                            <label class="form-check-label" for="validationFormCheck2">Sales Person</label>
+                            <div class="invalid-feedback">Please select user group.</div>
+
+                          </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="form-check mb-3">
+                            <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+                            <label class="form-check-label" for="validationFormCheck3">Customer</label>
+                          </div>
+                    </div>
+                </div>
+                
+                  
+
+                
+
+            </div>
+        </div>
+        <hr>
+        <div class="form-group row">
+            <div class="col">
+                <input type="submit" value="Save" class="btn btn-primary ">
+                <button id="cancel" name="Cancel" class="btn btn-secondary" value="1">Cancel</button>
+                <button type="reset" value="Delete" class="btn btn-danger" style="float:right">Delete</button>
+            </div>
+        </div>
+
+    </form>
+</body>
+
+</html>
